@@ -1,0 +1,7 @@
+Gemfile.lock
+_site
+_drafts
+.DS_Store
+.sass-cache/
+_posts/.DS_Store
+_sass/.DS_Store
