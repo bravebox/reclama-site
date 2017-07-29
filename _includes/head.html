@@ -1,0 +1,13 @@
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>
+        {% if page.alias %}
+            {{site.title}} | Notes: {{page.alias}}
+        {% else %}
+            {{site.title}} | {{page.title}}
+        {% endif %}
+    </title>
+    <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
+    <link rel="stylesheet" type="text/css" href="/assets/base.css" />
+</head>

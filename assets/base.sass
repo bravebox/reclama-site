@@ -1,0 +1,167 @@
+---
+---
+
+@import "bulma/bulma"
+
+*
+  box-sizing: border-box
+
+.rc-section-full
+  width: 100vw
+  height: 100vh
+  background: #2d5b7d
+
+.rc-logo
+  position: absolute
+  top: calc(50% - 25px)
+  left: calc(50% - 140px)
+  z-index: 10
+  width: 280px
+  height: 50px
+  svg
+    fill: $prm
+  @media(min-width: 769px)
+    top: calc(50% - 70px)
+    left: calc(50% - 260px)
+    width: 520px
+    height: 140px
+
+.rc-nav
+  position: absolute
+  top: calc(50% + 4rem)
+  left: 0
+  z-index: 20
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff
+  a
+    font-weight: 600
+    padding: .500rem
+    display: inline-block
+
+.rc-section-f
+  position: fixed
+  top: 4rem
+  left: 4rem
+  z-index: 30
+  width: calc(100% - 8rem)
+  height: calc(100% - 8rem)
+  background: rgba(#2d5b7d,.8)
+
+.rc-section-f-inner
+  padding: 2rem
+  height: 100%
+
+.rc-close
+  position: absolute
+  top: 1rem
+  right: 1rem
+  z-index: 1000
+  font-size: 1.250rem
+  background: #fff
+  border-radius: 50%
+  width: 2rem
+  height: 2rem
+  line-height: 2rem
+  text-align: center
+
+p 
+  margin-bottom: 1.500rem
+
+footer
+  position: fixed
+  bottom: 0
+  left: 0
+  color: #fff
+  width: 100%
+  p
+    margin: 0
+    padding: 1rem
+
+.u-text--c
+  text-align: center
+
+.rc-tilt-tile
+  transform-style: preserve-3d
+  width: 100%
+  height: 100%
+  flex: 3
+  background-size: cover !important
+  a, h4, small
+    transition: all 4s
+    position: absolute
+    width: 100%
+    text-align: center
+    margin: 0
+  h4
+    bottom: 4rem
+    color: #fff
+    transform: translateZ(2rem)
+    font-size: 2rem
+  small
+    bottom: 3rem
+    margin: 0
+    color: #fff
+    transform: translateZ(2rem)
+  &:hover 
+    z-index: 100
+    box-shadow: rgba(0,0,0,.1) 0 0 100px
+    &:after
+      transform: translateZ(-100px)
+
+.flex-wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.flex-row
+  display: flex
+  flex: 3
+  height: 50%
+
+.flex-tile
+  display: flex
+  flex: 3
+
+.flex-text-wrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-content: center
+  align-items: center
+  height: 100%
+
+.flex-text
+  order: 1
+  flex: 1 1 auto
+  align-self: auto
+
+.rc-text
+  // padding: 6rem
+  color: #ececec
+  font-size: 2rem
+
+.rc-mark
+  position: relative
+  display: inline-block
+
+.rc-mark::after
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 1px
+  background: $prm
+
+#particles-js
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  overflow: hidden
+  z-index: 0
