@@ -9,7 +9,6 @@ layout: default
 </section>
 
 <script>
-
 var ParticlerExample = new Particler("example",{
     quantity: 20,
     lineWidth: 0.05,
@@ -22,40 +21,3 @@ var ParticlerExample = new Particler("example",{
     backgroundColor: 'transparent'    
 });
 </script>
-
-
-<!-- <div class="mb-sm-4">
-    <p class="h1">Testsite</p>
-</div>
-
-<hr>
-
-<h1 class="mb-sm-3">Latest work at Etsy</h2>
-
-<div class="col-group">
-	{% assign sorted_work = site.books | sort: 'position' %}
-    {% for item in sorted_work limit:3 %}
-        <div class="col col-sm-12 mb-sm-3">
-            <a href="{{item.url}}" class="display-block link-gray">
-                <h2 class="mb-sm-0">{{item.title}}</h2>
-                <p class="mt-sm-0">{{item.description}}</p>
-            </a>
-        </div>
-    {% endfor %}
-</div>
-
-<hr>
-
-<h1 class="mt-sm-4">Latest notes and updates</h2>
-
-<div class="col-group">
-    {% for post in site.posts limit:3 %}
-        <div class="col col-sm-12 prose">
-            <a href="{{post.url}}" class="display-block link-gray">
-                <h2 class="mb-sm-0">{{post.title}}</h2>
-            </a>
-            <p class="mt-sm-0">{{ post.excerpt | markdownify }}</p>
-            <a href="{{post.url}}" class="btn btn-black mt-sm-2 mb-sm-4">Read more</a>
-        </div>
-    {% endfor %}
-</div> -->
