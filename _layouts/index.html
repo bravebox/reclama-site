@@ -2,7 +2,29 @@
 layout: default
 ---
 
-<div class="mb-sm-4">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+<section class="section-full">
+    <div id="example"></div>
+</section>
+
+<script>
+
+var ParticlerExample = new Particler("example",{
+    quantity: 20,
+    lineWidth: 0.05,
+    fillColor: "black",
+    minSize: 1,
+    maxSize: 3,
+    minimalLineLength: 250,
+    speed: 25,
+    frameDuration: 20,
+    backgroundColor: 'transparent'    
+});
+</script>
+
+
+<!-- <div class="mb-sm-4">
     <p class="h1">Testsite</p>
 </div>
 
@@ -36,4 +58,4 @@ layout: default
             <a href="{{post.url}}" class="btn btn-black mt-sm-2 mb-sm-4">Read more</a>
         </div>
     {% endfor %}
-</div>
+</div> -->
